@@ -28,10 +28,10 @@
             </td>
         </tr>
         <tr th:each=" estudiante: ${estudiantes}">
-            <td th:text="${estudiante.nombre}"></td>
-            <td th:text="${estudiante.apellido}"></td>
-            <td th:text="${estudiante.cedula}"></td>
-            <td th:text="${estudiante.genero}"></td>
+            <td th:text="${estudiante.nombre}" class="text-uppercase"></td>
+            <td th:text="${estudiante.apellido}" class="text-uppercase"></td>
+            <td th:text="${estudiante.cedula}" class="text-uppercase"></td>
+            <td th:text="${estudiante.genero}" class="text-uppercase"></td>
             <td>
                 <form th:action="@{/estudiante/eliminar_e/{cedula}(cedula=${estudiante.cedula})}"
                 th:object="${estudiante}" th:method="DELETE">

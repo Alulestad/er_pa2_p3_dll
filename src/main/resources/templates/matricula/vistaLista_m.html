@@ -35,13 +35,13 @@
             </td>
         </tr>
         <tr th:each=" matricula: ${matriculas}">
-            <td th:text="${matricula.estudiante.cedula}"></td>
-            <td th:text="${matricula.estudiante.nombre}"></td>
-            <td th:text="${matricula.estudiante.apellido}"></td>
-            <td th:text="${matricula.estudiante.cedula}"></td>
+            <td th:text="${matricula.estudiante.cedula}" class="text-uppercase"></td>
+            <td th:text="${matricula.estudiante.nombre}" class="text-uppercase"></td>
+            <td th:text="${matricula.estudiante.apellido}" class="text-uppercase"></td>
+            <td th:text="${matricula.estudiante.cedula}" class="text-uppercase"></td>
 
-            <td th:text="${matricula.materia.nombre}"></td>
-            <td th:text="${matricula.materia.codigo}"></td>
+            <td th:text="${matricula.materia.nombre}" class="text-uppercase"></td>
+            <td th:text="${matricula.materia.codigo}" class="text-uppercase"></td>
 
             
 
