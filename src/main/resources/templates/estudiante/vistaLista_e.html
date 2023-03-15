@@ -13,6 +13,20 @@
 <body>
 
     <table>
+        <tr>
+            <td>
+                nombre
+            </td>
+            <td>
+                apellido
+            </td>
+            <td>
+                cedula
+            </td>
+            <td>
+                genero
+            </td>
+        </tr>
         <tr th:each=" estudiante: ${estudiantes}">
             <td th:text="${estudiante.nombre}"></td>
             <td th:text="${estudiante.apellido}"></td>
